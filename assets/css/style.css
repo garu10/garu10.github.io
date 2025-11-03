@@ -1,0 +1,44 @@
+/* navbar styling */
+    .nav-menu .nav-link {
+    font-size: 1.1rem;
+    letter-spacing: 1.8px;
+    color: #000;
+    transition: color 0.3s ease;
+    }
+
+    .nav-menu .nav-link:hover,
+    .nav-menu .nav-link.active {
+    color: #007bff;
+    }
+/* line divider */
+.line-divider {
+    height: 1px; 
+    border-top: 1px solid black; 
+    background-color: transparent; 
+}
+.bento-card {
+    background-color:white; 
+    border-radius: 1rem; 
+    padding: 2rem;
+    height: 100%;
+    border-width: 10px;
+}
+.profile-card {
+    min-height: auto; 
+    text-align: left; 
+}
+
+@media (min-width: 992px) {
+    .profile-card {
+        min-height: 500px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile-card > .d-flex {
+        align-items: center !important; 
+    }
+}
