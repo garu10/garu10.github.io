@@ -10,27 +10,28 @@
 
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet" type="text/css" href="styles.css"
+            rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
+    
+    <body class="bg-light text-dark">
         <header>
             <div class="container-fluid p-0">
-                <!-- Navbar -->
                 <div class="row g-0">
                     <div class="col-12">
-                        <nav class="navbar navbar-expand-lg p-4 text-dark">
+                        <nav class="navbar navbar-expand-lg p-3 navbar-light bg-white shadow-sm">
                             <div class="container flex-lg-column align-items-lg-center">
-                                <!-- Toggle Button -->
+                                <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3 fw-bold" href="index.html">
+                                    RALPH
+                                </a>
                                 <button
                                     class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <!-- Nav Links -->
                                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                                     <ul class="navbar-nav nav-underline text-uppercase nav-menu">
                                         <li class="nav-item">
@@ -50,100 +51,101 @@
                 </div>
             </div>
         </header>
-    <div class="container-fluid p-5" style = "margin-top: 40px;">
-        <div class="row gx-3 gy-4 align-items-start"> 
-            <div class="col-12 col-lg-3 col-xl-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="bento-card profile-card shadow" style ="padding: 50px; border-radius: 20px;">
-                                <div class="d-flex flex-column flex-md-row flex-lg-column align-items-center"> 
-                                    <div class="me-3 me-lg-0 mb-lg-3">
-                                        <div class="rounded-circle bg-dark d-inline-block shadow" style="width: 130px; height: 130px; overflow: hidden;">
-                                            <img src = "assets/profile/profile.jpg" class="w-100 h-100" style="object-fit: cover;">
+
+        <div class="container py-5 mt-4"> 
+            <div class="row gx-4 gy-4 align-items-start"> 
+                
+                <div class="col-12 col-lg-4 col-xl-3">
+                    <div class="bg-white p-5 rounded-4 shadow">
+                        <div class="d-flex flex-column flex-md-row flex-lg-column align-items-center">
+                            
+                            <div class="me-3 me-lg-0 mb-lg-3">
+                                <div class="bg-dark d-inline-block shadow rounded-circle overflow-hidden custom-profile-size">
+                                    <img src = "assets/profile/profile.jpg" class="w-100 h-100" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            
+                            <div class="text-start text-lg-center g-4"> 
+                                <h4 class="text-dark mb-1 pt-3">John Ralph Alcantara</h4>
+                                
+                                <div class="d-lg-block d-flex flex-column text-start pb-3 border-bottom">
+                                    <p class="text-muted small mb-0">Email:</p>
+                                    <span class="text-secondary">alcantarjohnralph@gmail.com</span>
+                                    <p class="text-muted small mb-0 mt-2">Location:</p>
+                                    <span class="text-secondary">Tanauan City Batangas</span>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center mt-3 w-100">
+                                    <a target="_blank" href="https://www.facebook.com/ralphalca/" class="text-secondary"><i class="me-3 fa fa-facebook-f fa-lg"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/ralph.o_x/" class="text-secondary"><i class="me-3 fa fa-instagram fa-lg"></i></a>
+                                    <a target="_blank" href="https://github.com/garu10" class="text-secondary"><i class="me-3 fa fa-github fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="col-12 col-lg-8 col-xl-9">
+                    <div class="bg-white p-5 rounded-4 shadow">
+                        
+                        <h2 class="display-5 fw-bold text-dark mb-4 border-bottom pb-2">WEBDEV</h2>
+
+                        <div class="accordion" id="projectsAccordion">
+                            
+                            <div class="accordion-item mb-4 rounded-4">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fs-4 fw-bold collapsed bg-light rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIphone" aria-expanded="false" aria-controls="collapseIphone">
+                                        IPHONE 15
+                                    </button>
+                                </h2>
+                                <div id="collapseIphone" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                                    <div class="accordion-body p-4">
+                                        <p class="lead text-dark border-bottom pb-3 mt-4">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus nihil quia accusamus eum ab provident sapiente eius tenetur. Fugiat repudiandae, maxime nemo fugit sunt eum incidunt rem in est.
+                                        </p>
+                                        <div class="ratio ratio-16x9 mb-3" style="min-height: 400px;">
+                                            <iframe 
+                                                src="https://garu10.github.io/Iphone-15" 
+                                                title="iPhone 15 Project Demo"
+                                                style="border: 1px solid #ccc; border-radius: 8px;">
+                                            </iframe>
                                         </div>
+                                        <a href="https://garu10.github.io/Iphone-15" target="_blank" class="btn btn-primary me-2">view page</a>
+                                        <a href="https://github.com/garu10/Iphone-15" target="_blank" class="btn btn-outline-dark">view repo</a>
                                     </div>
-                                    
-                                    <div class="text-start text-lg-center g-4"> 
-                                        <h4 class="text-black mb-1" style = "padding-bottom: 20px;">John Ralph Alcantara</h4>
-                                        
-                                        <div class="d-lg-block d-flex flex-column text-start" style=" padding-bottom: 30px;">
-                                            <p class="text-black-70 small mb-0">Email:</p>
-                                            <span class="text-black-50">alcantarjohnralph@gmail.com</span>
-                                            <p class="text-black-70 small mb-0">Location:</p>
-                                            <span class="text-black-50">Tanauan City Batangas</span>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item mb-4 rounded-4">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fs-4 fw-bold collapsed bg-light rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOsaka" aria-expanded="false" aria-controls="collapseOsaka">
+                                        OSAKA JAPAN
+                                    </button>
+                                </h2>
+                                <div id="collapseOsaka" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                                    <div class="accordion-body p-4">
+                                        <p class="lead text-dark border-bottom pb-3 mt-4">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ex a aperiam ea quam ipsam deserunt, similique, culpa esse facilis odit voluptate harum repellendus sed dolore. Deleniti fugit similique accusamus?
+                                        </p>
+                                        <div class="ratio ratio-16x9 mb-3" style="min-height: 400px;">
+                                            <iframe 
+                                                src="https://garu10.github.io/Osaka-Japan" 
+                                                title="Osaka Japan Project Demo"
+                                                style="border: 1px solid #ccc; border-radius: 8px;">
+                                            </iframe>
                                         </div>
-                                        <div class="d-flex flex-row justify-content-start justify-content-lg-center mt-2 w-100 w-lg-auto">
-                                            <a target="_blank" href="https://www.facebook.com/ralphalca/" class="text-black-50"><i class="me-3 fa fa-facebook-f fa-lg"></i></a>
-                                            <a target="_blank" href="https://www.instagram.com/ralph.o_x/" class="text-black-50"><i class="me-3 fa fa-instagram fa-lg"></i></a>
-                                            <a target="_blank" href="https://github.com/garu10" class="text-black-50"><i class="me-3 fa fa-github fa-lg"></i></a>
-                                        </div>
-                                    </div>   
+                                        <a href="https://garu10.github.io/Osaka-Japan" target="_blank" class="btn btn-primary me-2">view page</a>
+                                        <a href="https://github.com/garu10/Osaka-Japan" target="_blank" class="btn btn-outline-dark">view repo</a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-9 col-xl-9">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-9 col-sm-12">
-                            <div class="project">
-                                <div class="project-iframe">
-                                    <iframe 
-                                        src="https://garu10.github.io/Iphone-15" 
-                                        width="100%" 
-                                        height="600px" 
-                                        title="Embedded Content Example"
-                                        style="border: 1px solid #ccc; border-radius: 8px;">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-9 col-sm-12">
-                            <h1 class="text-size">IPHONE 15</h1>
-                            <p class="text-justify-custom">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Voluptatem in veritatis cupiditate inventore corporis ad 
-                                numquam nam neque asperiores quo eligendi laborum sunt 
-                                perferendis veniam quisquam similique nihil, quasi sequi!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="line-divider mt-5 text-black"></div>
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-9 col-sm-12">
-                            <div class="project">
-                                <div class="project-iframe">
-                                    <iframe 
-                                        src="https://garu10.github.io/Osaka-Japan" 
-                                        width="100%" 
-                                        height="600px" 
-                                        title="Embedded Content Example"
-                                        style="border: 1px solid #ccc; border-radius: 8px;">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-9 col-sm-12">
-                            <h1 class="text-size">OSAKA JAPAN</h1>
-                            <p class="text-justify-custom">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Voluptatum sed consequuntur voluptatibus voluptates, 
-                                exercitationem praesentium animi dicta et perspiciatis 
-                                iusto quaerat iure harum quas, iste culpa totam unde, 
-                                quasi aspernatur?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                
             </div>
         </div>
-    </div>
+        
     <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
