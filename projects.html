@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>alcantaralph</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/logo/Alcantara_logo.svg">
         <meta charset="utf-8" />
         <meta
             name="viewport"
@@ -19,38 +19,36 @@
     </head>
     
     <body class="bg-light text-dark">
-        <header>
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg p-3 navbar-light bg-white shadow-sm">
-                            <div class="container flex-lg-column align-items-lg-center">
-                                <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3 fw-bold" href="index.html">
-                                    RALPH
-                                </a>
-                                <button
-                                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                                    <ul class="navbar-nav nav-underline text-uppercase nav-menu">
-                                        <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="about.html">About</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" href="projects.html">Projects</a>
-                                        </li>
-                                    </ul>
-                                </div>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg p-3 navbar-light bg-white shadow-sm">
+                        <div class="container flex-lg-column align-items-lg-center">
+                            <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3" href="index.html" style ="width: 65px; height: 65px;">
+                                <img id="navLogo" src="assets/img/logo/Alcantara_logo.svg" class="d-inline-block w-100 h-100 object-fit-contain" >
+                            </a>
+                            <button
+                                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                                <ul class="navbar-nav nav-underline text-uppercase nav-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="projects.html">Projects</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </nav>
-                    </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </header>
+        </div>
 
         <div class="container py-5 mt-4"> 
             <div class="row gx-4 gy-4 align-items-start"> 
@@ -61,7 +59,7 @@
                             
                             <div class="me-3 me-lg-0 mb-lg-3">
                                 <div class="bg-dark d-inline-block shadow rounded-circle overflow-hidden custom-profile-size">
-                                    <img src = "assets/profile/profile.jpg" class="w-100 h-100" style="object-fit: cover;">
+                                    <img src = "assets/img/profile/profile.jpg" class="w-100 h-100" style="object-fit: cover;">
                                 </div>
                             </div>
                             
@@ -87,7 +85,7 @@
                 <div class="col-12 col-lg-8 col-xl-9">
                     <div class="bg-white p-5 rounded-4 shadow">
                         
-                        <h2 class="display-5 fw-bold text-dark mb-4 border-bottom pb-2">WEBDEV</h2>
+                        <h2 class="display-5 fw-bold text-dark mb-4 border-bottom pb-2">WEBDEV ARCHIVE</h2>
 
                         <div class="accordion" id="projectsAccordion">
                             
@@ -143,6 +141,34 @@
                                         </div>
                                         <a href="https://garu10.github.io/Osaka-Japan" target="_blank" class="btn btn-primary me-2">view page</a>
                                         <a href="https://github.com/garu10/Osaka-Japan" target="_blank" class="btn btn-outline-dark">view repo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-4">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fs-4 fw-bold collapsed bg-light rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHxH" aria-expanded="false" aria-controls="collapseHxH">
+                                        HUNTER ASSOCIATION
+                                    </button>
+                                </h2>
+                                <div id="collapseHxH" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                                    <div class="accordion-body p-4">
+                                        <p class="lead text-dark text-justify-custom border-bottom pb-3 mt-4">
+                                            Explore the Hunter x Hunter characters with unique Nen abilities
+                                            through this fan-driven Gallery Website designed with an engaging theme. 
+                                            This gallery website a includes a toggle button which triggered changing
+                                            modes from light to dark, introducing a more captivating design functionality
+                                            for showcasing HxH Characters gallery.
+
+                                        </p>
+                                        <div class="ratio ratio-16x9 mb-3" style="min-height: 400px;">
+                                            <iframe 
+                                                src="https://garu10.github.io/Gallery" 
+                                                title="Hunter x Hunter Gallery- WebDev"
+                                                style="border: 1px solid #ccc; border-radius: 8px;">
+                                            </iframe>
+                                        </div>
+                                        <a href="https://garu10.github.io/Gallery" target="_blank" class="btn btn-primary me-2">view page</a>
+                                        <a href="https://github.com/garu10/Gallery" target="_blank" class="btn btn-outline-dark">view repo</a>
                                     </div>
                                 </div>
                             </div>
